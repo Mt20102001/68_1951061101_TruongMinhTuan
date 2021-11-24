@@ -112,7 +112,9 @@ body{
     object-fit: cover;
 }
 
-/* side-bar */
+.side-bar{
+    overflow: auto;
+}
 
 .side-bar{
     position: fixed;
@@ -125,7 +127,19 @@ body{
     padding-right: 10px;
 }
 
-.links{
+.text-name{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    color: #979797;
+    
+}
+
+.links,
+.links-channels{
     display: block;
     width: 100%;
     padding: 10px 20px;
@@ -143,9 +157,37 @@ body{
     margin-right: 20px;
 }
 
+.links-channels img{
+    height: 25px;
+    width: 25px;
+    margin-right: 22px;
+    border-radius: 100%;
+}
+
 .links:hover,
+.links-channels:hover,
 .links.active{
     background: rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+    padding: 10px 24px 0;
+    align-items: center;
+}
+
+.footer-link{
+    padding-right: 6px;
+    text-transform: capitalize;
+    color: #646464;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer p{
+    padding: 10px 0 25px 0;
+    color: #7a7a7a;
+    font-size: 12px;
 }
 
 .seperator{
@@ -243,5 +285,5 @@ body{
 .channel-name{
     font-size: 14px;
     margin: 2px 0;
-    color: #979797;
+    color: #747474;
 }
